@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: #313131;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* color #4f4f4f */
+
+html{
+    font-size: 67,5%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body{
+    background-color: #dfdbdb;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+#formprincipal{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 1.5rem;
+
+}
+
+#inputsdiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+input,textarea{
+    min-width:25vw;
+    border-style: none;
+    height: 10vh;
+    margin:2rem;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
+    0px 10px 20px -10px rgba(0, 0, 0, 0.1);
+}
+input::placeholder{
+    text-transform: uppercase;
+    font-size: 1,7rem;
+}
+textarea::placeholder{
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#button2{
+    width:25vw;
+    height: 10vh;
+    margin:2rem;
+    padding:1rem;
+    border-radius: 2px 3px;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+}
+
+h2{
+    border-style: solid;
+    border:#313131;
+    padding: 1rem;
+    margin:1rem;
+    border-radius: 2px;
+    text-align: center;
+    align-items: center;
+}
+
+p{
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#principal2{
+    display: none;
+}
+
+
+
+
+#div2radio{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
+
+
+#divradio{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    min-height: 10vh;
+    min-width:25vw;
+}
+
+
+#radioinput1 , #radioinput2 ,#radioinput3 {
+    min-width:7%;
+    margin:0.5rem;
+    padding:0;
+    float: right;
+}
+
+#pradio{
+    margin:1.6rem;
+    font-size: 1.2rem;
+}
+
+label{
+    font-size:1rem;
+    margin:0.5rem;
+    padding:0;
+    height: 10vh;
+}
