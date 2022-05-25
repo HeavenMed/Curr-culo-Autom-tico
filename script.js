@@ -7,9 +7,7 @@ const numero = document.getElementById("numero")
 const btn2 = document.getElementById("button2")
 const principal2 = document.getElementById("principal2")
 const body = document.querySelector("#body")
-const radio1 = document.querySelector("#radioinput1")
-const radio2 = document.querySelector("#radioinput1")
-const radio3 = document.querySelector("#radioinput1")
+const number = document.querySelector('#inputnumber')
 
 const Clique = (e) => {
   const input1 = document.querySelector("#input1");
@@ -18,10 +16,14 @@ const Clique = (e) => {
   const input4 = document.querySelector("#input4");
   const input5 = document.querySelector("#input5");
   
-  const radioinput1 = radio1.value;
-  const radioinput2 = radio2.value;
-  const radioinput3 = radio3.value;
-
+  
+  const body = document.querySelector("#body")
+  
+  const valornumber = number.value;
+  const mudarback = () => {
+    body.style.backroundImage = `url(${valornumber}.jpg)`
+  }
+  mudarback()
   main2.style.display = "none"
 
   h3.innerHTML = input1.value;
@@ -32,9 +34,8 @@ const Clique = (e) => {
 
   principal2.style.display = "block"
 
-  body.style.backgroundImage = 'url("${radioinput1}.jpg")'
-  body.style.backgroundImage = 'url("${radioinput2}.jpg")'
-  body.style.backgroundImage = 'url("${radioinput3}.jpg")'
+  
+
   e.preventDefault()
 }
-btn2.addEventListener('click' , Clique ,)
+btn2.addEventListener('click' , Clique , )
